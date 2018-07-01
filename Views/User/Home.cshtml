@@ -1,0 +1,12 @@
+@model UserRegister
+<h1>Register with Bank Accounts!</h1>
+<div asp-validation-summary="All"></div>
+<form asp-action="Registration" asp-controller="User" method="post">
+    <input asp-for="firstName" placeholder="First Name">
+    <input asp-for="lastName" placeholder="Last Name">
+    <input asp-for="email" placeholder="Email">
+    <input asp-for="password" placeholder="Password">
+    <input asp-for="confirmPassword" placeholder="Confirm Password">
+    <input type="submit" value="Register">
+</form>
+<a href="/login">Login!</a>

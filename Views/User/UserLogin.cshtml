@@ -1,0 +1,9 @@
+@model UserLogin
+<h1>Login with Bank Accounts!</h1>
+<div asp-validation-summary="All"></div>
+<form asp-action="LoginProc" asp-controller="User" method="Post">
+    <input asp-for="email" placeholder="Email">
+    <input asp-for="password" placeholder="Password">
+    <input type="submit" value="Login">
+</form>
+<a href="/">Return home to register!</a>

@@ -1,0 +1,6 @@
+@model TransValidation
+<form style="margin: 25px 0px;" asp-action="Process" asp-controller="Transaction" method="post">
+    <label asp-for="total">Withdraw(-)/Deposit(+)</label>
+    <input asp-for="total" value="" placeholder="$0.00">
+    <input type="submit" value="Process">
+</form>
